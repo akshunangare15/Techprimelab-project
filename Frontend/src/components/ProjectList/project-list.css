@@ -1,0 +1,119 @@
+/* project-list.css */
+
+.projects-container {
+ max-width: calc(100% - 0px);
+ margin-left: 220px; 
+  max-height: 98px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #5a29e2;
+  border-bottom-left-radius: 5%; /* Adjust the border radius for a curve from the lower-left corner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  margin-top: 60px;
+ margin-left: 100px;
+   /* Adjust based on your sidebar width */
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+ 
+  padding: 18px;
+  width: 120px; /* Adjust the width as needed */
+  margin-right: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  height: 38px;
+  width: 120px;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-left: 20px; /* Adjust based on your sidebar width */
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.project-table th {
+  background-color: #f2f2f2;
+}
+
+.start-button,
+.close-button,
+.cancel-button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: green;
+  color: white;
+}
+
+.close-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.cancel-button {
+  background-color: grey;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .search-bar {
+    margin-left: 0;
+  }
+
+  .table-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-bar input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .projects-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .table-container {
+    margin-left: 0;
+  }
+}

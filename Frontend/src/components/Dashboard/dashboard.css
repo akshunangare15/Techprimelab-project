@@ -1,0 +1,93 @@
+
+/* dashboard.css */
+
+.dashboard {
+  max-width: calc(100% - 60px); /* Adjust based on the width of the sidebar */
+  margin-left: 440px; /* Adjust based on the width of the sidebar */
+  padding: 10px;
+  transition: margin-left 0.3s;
+  max-width: 1000px;
+  max-height: 88px;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #5a29e2;
+  border-bottom-left-radius: 25%; /* Adjust the border radius for a curve from the lower-left corner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.registered {
+  background-color: #e6f7ff;
+}
+
+.closed {
+  background-color: #d4ffd6;
+}
+
+.running {
+  background-color: #ffd699;
+}
+
+.closure-delay {
+  background-color: #ffcccc;
+}
+
+.graph-container {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .dashboard {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
